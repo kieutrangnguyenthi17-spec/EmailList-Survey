@@ -17,6 +17,9 @@ public class EmailListServlet extends HttpServlet  {
                           HttpServletResponse response) 
                           throws ServletException, IOException {
 
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+                              
         String url = "/index.html";
 
         // get current action - không cho qua controller nếu không qua index.html
